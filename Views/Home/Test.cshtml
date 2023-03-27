@@ -1,0 +1,21 @@
+﻿@model IEnumerable<DataAccessLayer.Models.User>
+
+<h1>Users</h1>
+<table>
+    <tr>
+        <th>Firstname</th>
+            <th>Firstname</th>
+            <th>Firstname</th>
+    </tr>
+    
+        @foreach(var item in Model)
+        {
+                 <tr>
+            <th>@item.FirstName</th>
+            <th>@item.LastName</th>
+            <th>@item.Email</th>
+        </tr>
+        }
+    
+   
+</table>
